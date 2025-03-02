@@ -3,6 +3,8 @@ package com.josua.projects.pedidos_con_ApacheCamel_ActiveMQ.entities;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.io.Serializable;
+
 @Entity
 @Table(name = "customers")
 @Getter @Setter @AllArgsConstructor @NoArgsConstructor

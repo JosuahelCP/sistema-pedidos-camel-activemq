@@ -1,5 +1,6 @@
 package com.josua.projects.pedidos_con_ApacheCamel_ActiveMQ.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -13,6 +14,7 @@ public class OrderDetails {
     private Long id;
 
     @ManyToOne
+    @JsonIgnore
     @JoinColumn(name = "order_id", nullable = false)
     private Order order;
 

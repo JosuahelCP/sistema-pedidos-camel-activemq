@@ -3,6 +3,7 @@ package com.josua.projects.pedidos_con_ApacheCamel_ActiveMQ.entities;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -10,7 +11,8 @@ import java.util.List;
 @Table(name = "orders")
 @Getter @Setter @AllArgsConstructor @NoArgsConstructor
 @Builder
-public class Order {
+public class Order{
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
